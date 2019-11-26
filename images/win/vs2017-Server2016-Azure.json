@@ -24,7 +24,8 @@
         "install_user": "installer",
         "install_password": null,
         "capture_name_prefix": "packer",
-        "image_version": "dev"
+        "image_version": "dev",
+        "npm_registry": "https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/"
     },
     "builders": [
         {
@@ -273,9 +274,11 @@
             ]
         },
         {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Download-ToolCache.ps1"
+            "type": "shell-local",
+            "inline": "powershell $TEMPLATE_DIR/scripts/Installers/Download-ToolCache.ps1 -NpmRegistry $NPM_REGISTRY",
+            "environment_vars": [
+                "NPM_REGISTRY={{ user `npm_registry` }}",
+                "TEMPLATE_DIR={{ template_dir }}"
             ]
         },
         {

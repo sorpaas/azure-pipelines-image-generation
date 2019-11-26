@@ -4,20 +4,22 @@
 ##  Desc:  Download tool cache
 ################################################################################
 
+Param(
+    [Parameter(Mandatory=$true)]
+    [System.String]
+    $NpmRegistry
+)
+
 Function Install-NpmPackage {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory=$true)]
-        [System.String[]]
-        $Name,
         [System.String]
-        $NpmRegistry="https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/"
+        $Name
     )
 
-    foreach($packageName in $Name) {
-        Write-Host "Installing npm '$packageName' package from '$NpmRegistry'"
-        npm install $packageName --registry=$NpmRegistry
-    }
+    Write-Host "Installing npm '$Name' package from '$NpmRegistry'"
+    npm install $Name --registry=$NpmRegistry
 }
 
 Function InstallTool {
@@ -65,13 +67,15 @@ Pop-Location
 $env:AGENT_TOOLSDIRECTORY = $ToolsDirectory
 setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M
 
-# Install Python ToolCache
+# Install PyPy ToolCache
 $PyPyVersionsToolcacheInstall = @(
     "toolcache-pypy-windows-x86@2.7"
     "toolcache-pypy-windows-x86@3.6"
 )
 
-Install-NpmPackage -Name $PyPyVersionsToolcacheInstall
+foreach($PypyVersion in $PyPyVersionsToolcacheInstall) {
+    Install-NpmPackage -Name $PypyVersion
+}
 
 #junction point from the previous Python2 directory to the toolcache Python2
 $python2Dir = (Get-Item -Path ($ToolsDirectory + '/Python/2.7*/x64')).FullName
