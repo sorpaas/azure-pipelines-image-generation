@@ -18,9 +18,6 @@ azcopy --recursive \
        --source https://vstsagenttools.blob.core.windows.net/tools/hostedtoolcache/linux \
        --destination $AGENT_TOOLSDIRECTORY
 
-# Remove Boost toolcache folder manually because azcopy doesn't support exclude flag
-rm -rf $AGENT_TOOLSDIRECTORY/Boost/*
-
 # Install tools from hosted tool cache
 original_directory=$PWD
 setups=$(find $AGENT_TOOLSDIRECTORY -name setup.sh)
