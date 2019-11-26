@@ -18,6 +18,9 @@ azcopy --recursive \
        --source https://vstsagenttools.blob.core.windows.net/tools/hostedtoolcache/ubuntu-1804 \
        --destination $AGENT_TOOLSDIRECTORY
 
+# Remove Boost toolcache folder manually because azcopy doesn't support exclude flag
+rm -rf $AGENT_TOOLSDIRECTORY/Boost/*
+
 # Install tools from hosted tool cache
 original_directory=$PWD
 setups=$(find $AGENT_TOOLSDIRECTORY -name setup.sh)
@@ -27,6 +30,8 @@ for setup in $setups; do
 	./$(basename $setup);
 	cd $original_directory;
 done;
+
+chmod -R 777 $AGENT_TOOLSDIRECTORY
 
 echo "Installing npm-toolcache..."
 BOOST_VERSIONS=( '1.69' )
