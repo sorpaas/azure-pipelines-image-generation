@@ -28,8 +28,6 @@ for setup in $setups; do
 	cd $original_directory;
 done;
 
-chmod -R 777 $AGENT_TOOLSDIRECTORY
-
 echo "Installing npm-toolcache..."
 BOOST_VERSIONS=( '1.69.0' )
 
