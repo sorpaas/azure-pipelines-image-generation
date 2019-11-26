@@ -29,7 +29,7 @@ for setup in $setups; do
 done;
 
 echo "Installing npm-toolcache..."
-BOOST_VERSIONS=( '1.69.0' )
+BOOST_VERSIONS=( '1.69' )
 
 for BOOST_VERSION in ${BOOST_VERSIONS[@]}; do
     echo "Install boost-$BOOST_VERSION"

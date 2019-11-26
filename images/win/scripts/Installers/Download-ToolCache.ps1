@@ -64,7 +64,7 @@ setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M
 
 # Install Boost ToolCache
 $BoostVersionsToolcacheInstall = @(
-    "toolcache-boost-windows-x64@1.69.0"
+    "toolcache-boost-windows-x64@1.69"
 )
 
 Install-NpmPackage -Name $BoostVersionsToolcacheInstall
