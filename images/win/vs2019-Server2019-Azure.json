@@ -62,9 +62,7 @@
         {
             "type": "powershell",
             "inline":[
-                "New-Item -Path {{user `image_folder`}} -ItemType Directory -Force",
-                "Write-Output {{user `commit_url`}} > {{user `commit_file` }}",
-                "Write-Host (Get-Content -Path {{user `commit_file`}})"
+                "New-Item -Path {{user `image_folder`}} -ItemType Directory -Force"
             ]
         },
         {
@@ -239,6 +237,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-NodeLts.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Download-ToolCache.ps1"
             ]
         },
@@ -330,12 +334,6 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-WinAppDriver.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-NodeLts.ps1"
             ]
         },
         {
