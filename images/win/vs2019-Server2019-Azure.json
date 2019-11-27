@@ -242,11 +242,12 @@
             ]
         },
         {
-            "type": "shell-local",
-            "inline": "powershell $TEMPLATE_DIR/scripts/Installers/Download-ToolCache.ps1 -NpmRegistry $NPM_REGISTRY",
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Download-ToolCache.ps1"
+            ],
             "environment_vars": [
-                "NPM_REGISTRY={{ user `npm_registry` }}",
-                "TEMPLATE_DIR={{ template_dir }}"
+                "NPM_REGISTRY={{ user `npm_registry` }}"
             ]
         },
         {

@@ -4,18 +4,15 @@
 ##  Desc:  Download tool cache
 ################################################################################
 
-Param(
-    [Parameter(Mandatory=$true)]
-    [System.String]
-    $NpmRegistry
-)
-
 Function Install-NpmPackage {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory=$true)]
         [System.String]
-        $Name
+        $Name,
+        [Parameter(Mandatory=$true)]
+        [System.String]
+        $NpmRegistry
     )
 
     Write-Host "Installing npm '$Name' package from '$NpmRegistry'"
@@ -74,7 +71,7 @@ $PyPyVersionsToolcacheInstall = @(
 )
 
 foreach($PypyVersion in $PyPyVersionsToolcacheInstall) {
-    Install-NpmPackage -Name $PypyVersion
+    Install-NpmPackage -Name $PypyVersion -NpmRegistry $env:NPM_REGISTRY
 }
 
 #junction point from the previous Python2 directory to the toolcache Python2
