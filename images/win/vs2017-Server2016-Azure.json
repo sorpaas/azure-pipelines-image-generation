@@ -585,8 +585,8 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "BOOST_VERSIONS=1.69.0",
-                "BOOST_DEFAULT=1.69.0"
+                "BOOST_VERSIONS=1.69",
+                "BOOST_DEFAULT=1.69"
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Boost.ps1"

@@ -12,7 +12,9 @@ function Validate-BoostVersion
         [String]$BoostRelease
     )
 
-    $ReleasePath = Join-Path -Path $BoostRootPath -ChildPath $BoostRelease
+    $ReleasePath = Join-Path -Path $BoostRootPath -ChildPath ($BoostRelease + '.*')
+
+    Write-Host "ReleasePath: $ReleasePath"
 
     if ((Test-Path "$ReleasePath\b2.exe") -and (Test-Path "$ReleasePath\bjam.exe"))
     {
@@ -60,8 +62,12 @@ $BoostVersionsToInstall = $env:BOOST_VERSIONS.split(",")
 
 foreach($Boost in $BoostVersionsToInstall)
 {
+    Write-Host "Boost version: $Boost"
+
     Validate-BoostVersion -BoostRootPath $BoostRootDirectory -BoostRelease $Boost
     $BoostVersionTag = "BOOST_ROOT_{0}" -f $Boost.Replace('.', '_')
+
+    Write-Host "Boost version tag: $BoostVersionTag"
 
     if($boost -eq $env:BOOST_DEFAULT)
     {
