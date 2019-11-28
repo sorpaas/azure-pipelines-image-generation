@@ -437,7 +437,7 @@
                 "BOOST_DEFAULT=1.69.0"
             ],
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+                "{{ template_dir }}/scripts/Installers/Set-BoostRoot.ps1"
             ]
         },
         {
