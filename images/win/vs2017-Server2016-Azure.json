@@ -462,6 +462,16 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "BOOST_VERSIONS=1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Mercurial.ps1"
             ]
@@ -585,8 +595,8 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "BOOST_VERSIONS=1.69",
-                "BOOST_DEFAULT=1.69"
+                "BOOST_VERSIONS=1.69.0",
+                "BOOST_DEFAULT=1.69.0"
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Boost.ps1"
