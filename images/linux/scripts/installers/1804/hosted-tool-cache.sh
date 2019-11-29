@@ -18,8 +18,9 @@ azcopy --recursive \
        --source https://vstsagenttools.blob.core.windows.net/tools/hostedtoolcache/ubuntu-1804 \
        --destination $AGENT_TOOLSDIRECTORY
 
-# Remove PyPy toolcache folder manually because azcopy doesn't support exclude flag
+# Remove Boost & PyPy toolcache folder manually because azcopy doesn't support exclude flag
 rm -rf $AGENT_TOOLSDIRECTORY/PyPy/*
+rm -rf $AGENT_TOOLSDIRECTORY/Boost/*
 
 # Install tools from hosted tool cache
 original_directory=$PWD
@@ -34,11 +35,19 @@ done;
 chmod -R 777 $AGENT_TOOLSDIRECTORY
 
 echo "Installing npm-toolcache..."
-PYPY_VERSIONS=( '2.7' '3.6' )
 
+toolVersions=$(cat $TEMPLATE_DIR/toolcache.json)
+
+PYPY_VERSIONS=$(echo $toolVersions | jq -r '.["pypy"] | .[]')
 for PYPY_VERSION in ${PYPY_VERSIONS[@]}; do
     echo "Install PyPy-$PYPY_VERSION"
     npm install toolcache-pypy-ubuntu-1804-x64@$PYPY_VERSION --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+done;
+
+BOOST_VERSIONS=$(echo $toolVersions | jq -r '.["boost"] | .[]')
+for BOOST_VERSION in ${BOOST_VERSIONS[@]}; do
+    echo "Install boost-$BOOST_VERSION"
+    npm install toolcache-boost-ubuntu-1804-x64@$BOOST_VERSION --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
 done;
 
 DocumentInstalledItem "Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)"
