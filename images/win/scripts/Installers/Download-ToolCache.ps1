@@ -75,7 +75,7 @@ $ToolVersions.PSObject.Properties | ForEach-Object {
     $PackageVersions = $_.Value
     $NpmPackages = $PackageVersions | ForEach-Object { "$PackageName@$_" }
     foreach($NpmPackage in $NpmPackages) {
-        Write-Host $NpmPackage
+        Install-NpmPackage -Name $NpmPackage -NpmRegistry $env:NPM_REGISTRY
     }
 }
 
