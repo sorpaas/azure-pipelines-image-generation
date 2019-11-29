@@ -47,8 +47,9 @@ $env:Path = "C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy;" + $env:Path
 Write-Host "Started AzCopy from $SourceUrl to $Dest"
 AzCopy /Source:$SourceUrl /Dest:$Dest /S /V /Pattern:$Path
 
-# Temporary remove PyPy
+# Temporary remove PyPy & Boost
 Remove-Item -Path C:\hostedtoolcache\windows\PyPy -Force -Recurse
+Remove-Item -Path C:\hostedtoolcache\windows\Boost -Force -Recurse
 
 # Install ToolCache
 Push-Location -Path $ToolsDirectory
@@ -64,14 +65,18 @@ Pop-Location
 $env:AGENT_TOOLSDIRECTORY = $ToolsDirectory
 setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M
 
-# Install PyPy ToolCache
-$PyPyVersionsToolcacheInstall = @(
-    "toolcache-pypy-windows-x86@2.7"
-    "toolcache-pypy-windows-x86@3.6"
-)
+# Install tools form NPM
 
-foreach($PypyVersion in $PyPyVersionsToolcacheInstall) {
-    Install-NpmPackage -Name $PypyVersion -NpmRegistry $env:NPM_REGISTRY
+$ToolVersionsFileContent = Get-Content -Path "$env:TEMPLATE_DIR./toolcache.json" -Raw
+$ToolVersions = ConvertFrom-Json -InputObject $ToolVersionsFileContent
+
+$ToolVersions.PSObject.Properties | ForEach-Object {
+    $PackageName = $_.Name
+    $PackageVersions = $_.Value
+    $NpmPackages = $PackageVersions | ForEach-Object { "$PackageName@$_" }
+    foreach($NpmPackage in $NpmPackages) {
+        Write-Host $NpmPackage
+    }
 }
 
 #junction point from the previous Python2 directory to the toolcache Python2

@@ -244,10 +244,17 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-7zip.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Download-ToolCache.ps1"
             ],
             "environment_vars": [
-                "NPM_REGISTRY={{ user `npm_registry` }}"
+                "NPM_REGISTRY={{ user `npm_registry` }}",
+                "TEMPLATE_DIR={{template_dir}}"
             ]
         },
         {
@@ -424,18 +431,12 @@
         },
         {
             "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-7zip.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
             "environment_vars": [
                 "BOOST_VERSIONS=1.69.0",
                 "BOOST_DEFAULT=1.69.0"
             ],
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+                "{{ template_dir }}/scripts/Installers/Set-BoostRoot.ps1"
             ]
         },
         {

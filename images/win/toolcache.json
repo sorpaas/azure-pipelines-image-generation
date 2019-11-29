@@ -1,6 +1,6 @@
 {
-    "pypy": [
+    "toolcache-pypy-windows-x86": [
         "2", "3"
     ],
-    "boost": [ "1.69" ]
+    "toolcache-boost-windows-x64": [ "1.69" ]
 }
