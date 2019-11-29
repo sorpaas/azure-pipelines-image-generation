@@ -36,18 +36,18 @@ chmod -R 777 $AGENT_TOOLSDIRECTORY
 
 echo "Installing npm-toolcache..."
 
-toolVersions=$(cat $TEMPLATE_DIR/toolcache.json)
+toolVersionsFileContent=$(cat $TEMPLATE_DIR/toolcache.json)
 
-PYPY_VERSIONS=$(echo $toolVersions | jq -r '.["pypy"] | .[]')
-for PYPY_VERSION in ${PYPY_VERSIONS[@]}; do
-    echo "Install PyPy-$PYPY_VERSION"
-    npm install toolcache-pypy-ubuntu-1804-x64@$PYPY_VERSION --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
-done;
+tools=$(echo $toolVersionsFileContent | jq -r 'keys | .[]')
 
-BOOST_VERSIONS=$(echo $toolVersions | jq -r '.["boost"] | .[]')
-for BOOST_VERSION in ${BOOST_VERSIONS[@]}; do
-    echo "Install boost-$BOOST_VERSION"
-    npm install toolcache-boost-ubuntu-1804-x64@$BOOST_VERSION --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+for tool in ${tools[@]}; do
+    toolVersions=$(echo $toolVersionsFileContent | jq -r ".[\"$tool\"] | .[]")
+    for toolVersion in ${toolVersions[@]}; do
+		IFS='-' read -ra toolName <<< "$TOOL"
+        echo "Install ${toolName[1]} - v.$toolVersion"
+        toolVersionToInstall=$(printf "$tool" "1604" "$toolVersion")
+    	npm install $toolVersionToInstall --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+    done;
 done;
 
 DocumentInstalledItem "Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)"
