@@ -67,7 +67,7 @@ setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M
 
 # Install tools form NPM
 
-$ToolVersionsFileContent = Get-Content -Path "$env:TEMPLATE_DIR./toolcache.json" -Raw
+$ToolVersionsFileContent = Get-Content -Path "$env:ROOT_FOLDER/toolcache.json" -Raw
 $ToolVersions = ConvertFrom-Json -InputObject $ToolVersionsFileContent
 
 $ToolVersions.PSObject.Properties | ForEach-Object {
