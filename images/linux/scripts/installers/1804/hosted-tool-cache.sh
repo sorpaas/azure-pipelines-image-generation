@@ -36,17 +36,17 @@ chmod -R 777 $AGENT_TOOLSDIRECTORY
 
 echo "Installing npm-toolcache..."
 
-toolVersionsFileContent=$(cat $TEMPLATE_DIR/toolcache.json)
+toolVersionsFileContent=$(cat "$INSTALLER_SCRIPT_FOLDER/toolcache.json")
 
 tools=$(echo $toolVersionsFileContent | jq -r 'keys | .[]')
 
 for tool in ${tools[@]}; do
     toolVersions=$(echo $toolVersionsFileContent | jq -r ".[\"$tool\"] | .[]")
     for toolVersion in ${toolVersions[@]}; do
-		IFS='-' read -ra toolName <<< "$TOOL"
+        IFS='-' read -ra toolName <<< "$TOOL"
         echo "Install ${toolName[1]} - v.$toolVersion"
-        toolVersionToInstall=$(printf "$tool" "1604" "$toolVersion")
-    	npm install $toolVersionToInstall --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+        toolVersionToInstall=$(printf "$tool" "1804" "$toolVersion")
+        npm install $toolVersionToInstall --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
     done;
 done;
 

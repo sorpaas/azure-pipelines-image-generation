@@ -171,6 +171,11 @@
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
         {
+            "type": "file",
+            "source": "{{template_dir}}/toolcache.json",
+            "destination": "{{user `installer_script_folder`}}/toolcache.json"
+        },
+        {
             "type": "shell",
             "scripts":[
                 "{{template_dir}}/scripts/installers/1804/android.sh",
@@ -183,7 +188,7 @@
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
                 "HELPER_SCRIPTS={{user `helper_script_folder`}}",
-                "TEMPLATE_DIR={{template_dir}}"
+                "INSTALLER_SCRIPT_FOLDER={{user `installer_script_folder`}}"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
