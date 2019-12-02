@@ -1,6 +1,6 @@
 {
-    "pypy": [
+    "toolcache-pypy-ubuntu-%s-x64@%s": [
         "2", "3"
     ],
-    "boost": [ "1.69" ]
+    "toolcache-boost-ubuntu-%s-x64@%s": [ "1.69" ]
 }
