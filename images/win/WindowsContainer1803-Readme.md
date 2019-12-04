@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20190930.2) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20191202.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.2<br/>
+_Version:_ 19.03.5<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -30,30 +30,29 @@ _Version:_ 6.2.3<br/>
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:75bcfa62a231715c8864271db05f126cec9c86b3fd3c9d3048e48144eeddc314)
-* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:4002d333d9adb3ab00cfc01e9ee11f2bb8ceacd9612eea916a7d68fa70b5f05c)
-* microsoft/windowsservercore:1803 (Digest: sha256:9b22618ec9b832f7e74c5461b67761423fea83dd10bf627fe715e232aad0dc1e)
-* microsoft/nanoserver:1803 (Digest: sha256:47aa6f7f8ff1a02acc34b9f22689e9c89b3387efdd7c0f2cf6da9db810c0d4de)
-* mcr.microsoft.com/windows/servercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
-* mcr.microsoft.com/windows/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
+* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:a55aebebbbc4a56f6342e8f5e6eabc0ef0112de3c1b0cdae93739f7f894b0f5d)
+* microsoft/windowsservercore:1803 (Digest: sha256:7f8669fc5f43382aef13ed258a9aae0cd45e5f7beb8d8a49d38d71159ede46d6)
+* mcr.microsoft.com/windows/servercore:1803 (Digest: <none>)
+* microsoft/nanoserver:1803 (Digest: sha256:8c62a9d8ce7dea14cc08d556e26fafa76a4870b2bcc709e03bac5111f51a9450)
+* mcr.microsoft.com/windows/nanoserver:1803 (Digest: <none>)
+* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:8d5052ef39a8caa4bebf2d99059cfd693351898cf08bb381a909ba00ef3fbe3b)
 * microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 10.16.3<br/>
+_Version:_ 12.13.1<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Bower 1.8.8<br/>
-* Yarn 1.19.0<br/>
+* Yarn 1.21.0<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.9.0<br/>
+_Version:_ 6.12.1<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -65,12 +64,44 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
+* 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
+* 2.2.402 C:\Program Files\dotnet\sdk\2.2.402
+* 2.2.401 C:\Program Files\dotnet\sdk\2.2.401
+* 2.2.301 C:\Program Files\dotnet\sdk\2.2.301
+* 2.2.300 C:\Program Files\dotnet\sdk\2.2.300
+* 2.2.207 C:\Program Files\dotnet\sdk\2.2.207
+* 2.2.206 C:\Program Files\dotnet\sdk\2.2.206
+* 2.2.205 C:\Program Files\dotnet\sdk\2.2.205
+* 2.2.204 C:\Program Files\dotnet\sdk\2.2.204
+* 2.2.203 C:\Program Files\dotnet\sdk\2.2.203
+* 2.2.202 C:\Program Files\dotnet\sdk\2.2.202
+* 2.2.110 C:\Program Files\dotnet\sdk\2.2.110
+* 2.2.109 C:\Program Files\dotnet\sdk\2.2.109
+* 2.2.108 C:\Program Files\dotnet\sdk\2.2.108
+* 2.2.107 C:\Program Files\dotnet\sdk\2.2.107
+* 2.2.106 C:\Program Files\dotnet\sdk\2.2.106
 * 2.2.105 C:\Program Files\dotnet\sdk\2.2.105
 * 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
+* 2.1.802 C:\Program Files\dotnet\sdk\2.1.802
+* 2.1.801 C:\Program Files\dotnet\sdk\2.1.801
+* 2.1.701 C:\Program Files\dotnet\sdk\2.1.701
+* 2.1.700 C:\Program Files\dotnet\sdk\2.1.700
+* 2.1.607 C:\Program Files\dotnet\sdk\2.1.607
+* 2.1.606 C:\Program Files\dotnet\sdk\2.1.606
+* 2.1.605 C:\Program Files\dotnet\sdk\2.1.605
+* 2.1.604 C:\Program Files\dotnet\sdk\2.1.604
+* 2.1.603 C:\Program Files\dotnet\sdk\2.1.603
+* 2.1.602 C:\Program Files\dotnet\sdk\2.1.602
+* 2.1.510 C:\Program Files\dotnet\sdk\2.1.510
+* 2.1.509 C:\Program Files\dotnet\sdk\2.1.509
+* 2.1.508 C:\Program Files\dotnet\sdk\2.1.508
+* 2.1.507 C:\Program Files\dotnet\sdk\2.1.507
+* 2.1.506 C:\Program Files\dotnet\sdk\2.1.506
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -79,36 +110,18 @@ _SDK:_
 * 2.1.403 C:\Program Files\dotnet\sdk\2.1.403
 * 2.1.402 C:\Program Files\dotnet\sdk\2.1.402
 * 2.1.401 C:\Program Files\dotnet\sdk\2.1.401
-* 2.1.400 C:\Program Files\dotnet\sdk\2.1.400
-* 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
 * 2.1.302 C:\Program Files\dotnet\sdk\2.1.302
 * 2.1.301 C:\Program Files\dotnet\sdk\2.1.301
 * 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
-* 2.1.202 C:\Program Files\dotnet\sdk\2.1.202
-* 2.1.201 C:\Program Files\dotnet\sdk\2.1.201
-* 2.1.200 C:\Program Files\dotnet\sdk\2.1.200
-* 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
-* 2.1.105 C:\Program Files\dotnet\sdk\2.1.105
-* 2.1.104 C:\Program Files\dotnet\sdk\2.1.104
-* 2.1.103 C:\Program Files\dotnet\sdk\2.1.103
-* 2.1.102 C:\Program Files\dotnet\sdk\2.1.102
-* 2.1.101 C:\Program Files\dotnet\sdk\2.1.101
-* 2.1.100 C:\Program Files\dotnet\sdk\2.1.100
-* 2.0.3 C:\Program Files\dotnet\sdk\2.0.3
-* 2.0.0 C:\Program Files\dotnet\sdk\2.0.0
-* 1.1.9 C:\Program Files\dotnet\sdk\1.1.9
-* 1.1.8 C:\Program Files\dotnet\sdk\1.1.8
-* 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
-* 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
-* 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
-* 1.1.13 C:\Program Files\dotnet\sdk\1.1.13
-* 1.1.12 C:\Program Files\dotnet\sdk\1.1.12
-* 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
-* 1.1.10 C:\Program Files\dotnet\sdk\1.1.10
-* 1.0.4 C:\Program Files\dotnet\sdk\1.0.4
-* 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
+* 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
+* 2.2.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.8
+* 2.2.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.7
+* 2.2.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.6
+* 2.2.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.5
+* 2.2.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.4
 * 2.2.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.3
 * 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
@@ -121,46 +134,23 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
+* 2.1.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.14
+* 2.1.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.13
+* 2.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.12
+* 2.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.11
+* 2.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.10
 * 2.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.1
 * 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
-* 2.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.9
-* 2.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.7
-* 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
-* 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
-* 2.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.3
-* 2.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.0
-* 1.1.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.9
-* 1.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.8
-* 1.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.7
-* 1.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.6
-* 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
-* 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
-* 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
-* 1.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.12
-* 1.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.11
-* 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
-* 1.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.1
-* 1.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.9
-* 1.0.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.8
-* 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
-* 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
-* 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
-* 1.0.15 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.15
-* 1.0.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.14
-* 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
-* 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
-* 1.0.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.11
-* 1.0.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.10
 
 ## Git
 
-_Version:_ 2.23.0<br/>
+_Version:_ 2.24.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.8.0<br/>
+_Version:_ 2.9.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
