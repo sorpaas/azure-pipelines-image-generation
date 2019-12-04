@@ -1,11 +1,11 @@
 # Hosted Ubuntu 1604 Image (Ubuntu 16.04.6 LTS)
-The following software is installed on machines in the Hosted Ubuntu 1604 (20191025.1) pool
+The following software is installed on machines in the Hosted Ubuntu 1604 (20191202.1) pool
 ***
 - 7-Zip 9.20
-- Ansible (ansible 2.8.6)
+- Ansible (ansible 2.9.1)
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli                         2.0.75)
-- Azure CLI (azure-devops                      0.13.0)
+- Azure CLI (azure-cli                         2.0.77)
+- Azure CLI (azure-devops                      0.16.0)
 - Basic CLI:
   - curl
   - dnsutils
@@ -29,7 +29,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 (20191
   - wget
   - zip
   - tzdata
-- AWS CLI (aws-cli/1.16.266 Python/2.7.12 Linux/4.15.0-1057-azure botocore/1.13.2)
+- AWS CLI (aws-cli/1.16.293 Python/2.7.12 Linux/4.15.0-1063-azure botocore/1.13.29)
 - build-essential
 - Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190309042730.123 (branches/release_60))
 - CMake (cmake version 3.12.4)
@@ -41,11 +41,13 @@ The following software is installed on machines in the Hosted Ubuntu 1604 (20191
   - 2.2.401
   - 2.2.301
   - 2.2.300
+  - 2.2.207
   - 2.2.206
   - 2.2.205
   - 2.2.204
   - 2.2.203
   - 2.2.202
+  - 2.2.110
   - 2.2.109
   - 2.2.108
   - 2.2.107
@@ -60,11 +62,13 @@ The following software is installed on machines in the Hosted Ubuntu 1604 (20191
   - 2.1.801
   - 2.1.701
   - 2.1.700
+  - 2.1.607
   - 2.1.606
   - 2.1.605
   - 2.1.604
   - 2.1.603
   - 2.1.602
+  - 2.1.510
   - 2.1.509
   - 2.1.508
   - 2.1.507
@@ -80,18 +84,18 @@ The following software is installed on machines in the Hosted Ubuntu 1604 (20191
   - 2.1.302
   - 2.1.301
   - 2.1.300
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.5.3)
-- Firefox (Mozilla Firefox 70.0)
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.5.6)
+- Firefox (Mozilla Firefox 70.0.1)
 - GNU C++ 7.4.0
-- Git (2.23.0)
-- Git Large File Storage (LFS) (2.9.0)
+- Git (2.24.0)
+- Git Large File Storage (LFS) (2.9.1)
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.8 linux/amd64)
 - Go 1.11 (go version go1.11.12 linux/amd64)
 - Go 1.12 (go version go1.12.7 linux/amd64)
 - Go 1.13 (go version go1.13 linux/amd64)
-- Google Chrome (Google Chrome 78.0.3904.70 )
-- Google Cloud SDK (268.0.0)
+- Google Chrome (Google Chrome 78.0.3904.108 )
+- Google Cloud SDK (272.0.0)
 - Haskell Cabal (cabal-install version 2.0.0.1
 compiled using version 2.0.1.1 of the Cabal library )
 - Haskell Cabal (cabal-install version 2.2.0.0
@@ -109,63 +113,62 @@ compiled using version 3.0.0.0 of the Cabal library )
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.6.5)
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.8.1)
 - Haskell Stack (Version 2.1.3, Git revision 636e3a759d51127df2b62f90772def126cdf6d1f (7735 commits) x86_64 hpack-0.31.2)
-- Heroku (heroku/7.33.3 linux-x64 node-v11.14.0)
-- HHVM (HipHop VM 4.28.1 (rel))
+- Heroku (heroku/7.35.0 linux-x64 node-v12.13.0)
+- HHVM (HipHop VM 4.33.0 (rel))
 - ImageMagick
 - Azul Zulu OpenJDK (7) (openjdk version "1.7.0_242")
 - Azul Zulu OpenJDK (8) (openjdk version "1.8.0_232")
 - Azul Zulu OpenJDK (11) (openjdk version "11.0.5" 2019-10-15 LTS)
 - Azul Zulu OpenJDK (12) (openjdk version "12.0.2" 2019-07-16)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
-- Gradle 5.6.3
-- Maven (Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z))
+- Gradle 6.0.1
+- Maven (Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T15:06:16Z))
 - Kind (v0.5.1)
-- kubectl (Client Version: v1.16.2)
-- helm (Client: v2.15.1+gcf1de4f)
+- kubectl (Client Version: v1.16.3)
+- helm (Client: v2.16.1+gbbdfe5e)
 - Leiningen (Leiningen 2.9.1 on Java 1.8.0_232 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.4.1))
 - Miniconda (conda 4.7.12)
 - Mono (Mono JIT compiler version 6.4.0.198 (tarball Tue Sep 24 01:20:30 UTC 2019))
-- MySQL (mysql  Ver 14.14 Distrib 5.7.27, for Linux (x86_64) using  EditLine wrapper)
+- MySQL (mysql  Ver 14.14 Distrib 5.7.28, for Linux (x86_64) using  EditLine wrapper)
 - MySQL Server (user:root password:root)
 - MS SQL Server Client Tools
-- Node.js (v12.13.0)
-- Bower (1.8.8)
+- Node.js (v12.13.1)
 - Grunt (grunt-cli v1.2.0)
 - Gulp (CLI version: 2.2.0
 Local version: Unknown)
-- n (6.0.1)
+- n (6.1.3)
 - Parcel (1.12.4)
-- TypeScript (Version 3.6.4)
+- TypeScript (Version 3.7.2)
 - Webpack (4.41.2)
-- Webpack CLI (3.3.9)
-- Yarn (1.19.1)
+- Webpack CLI (3.3.10)
+- Yarn (1.19.2)
 - PhantomJS (2.1.1)
-- PHP 5.6 (PHP 5.6.40-13+ubuntu16.04.1+deb.sury.org+1 (cli) )
-- PHP 7.0 (PHP 7.0.33-12+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 19:00:13) ( NTS ))
-- PHP 7.1 (PHP 7.1.32-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:43:29) ( NTS ))
-- PHP 7.2 (PHP 7.2.24-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:28:51) ( NTS ))
-- PHP 7.3 (PHP 7.3.11-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:23:06) ( NTS ))
-- Composer  (Composer version 1.9.0 2019-08-02 20:55:32)
-- PHPUnit (PHPUnit 7.5.16 by Sebastian Bergmann and contributors.)
+- PHP 5.6 (PHP 5.6.40-14+ubuntu16.04.1+deb.sury.org+1 (cli) )
+- PHP 7.0 (PHP 7.0.33-13+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:43:06) ( NTS ))
+- PHP 7.1 (PHP 7.1.33-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:41:45) ( NTS ))
+- PHP 7.2 (PHP 7.2.25-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:41:59) ( NTS ))
+- PHP 7.3 (PHP 7.3.12-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:36:56) ( NTS ))
+- Composer  (Composer version 1.9.1 2019-11-01 17:20:17)
+- PHPUnit (PHPUnit 7.5.17 by Sebastian Bergmann and contributors.)
 - Pollinate
 - Powershell (PowerShell 6.2.3)
 - rustup (1.20.2)
-- rust (1.38.0)
-- cargo (1.38.0)
-- rustfmt (1.4.4-stable)
+- rust (1.39.0)
+- cargo (1.39.0)
+- rustfmt (1.4.8-stable)
 - clippy (0.0.212)
-- rustdoc (1.38.0)
+- rustdoc (1.39.0)
 - bindgen (execute
 the
-0.51.1)
-- cbindgen (0.9.1)
-- sbt (1.3.3)
+0.52.0)
+- cbindgen (0.10.0)
+- sbt (1.3.4)
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
-- Terraform (Terraform v0.12.12)
+- Terraform (Terraform v0.12.16)
 - Vcpkg 2019.09.12-unknownhash
-- Zeit Now CLI (16.4.0)
+- Zeit Now CLI (16.6.0)
 - Google Repository 58
 - Google Play services 49
 - Google APIs 24
@@ -176,7 +179,7 @@ the
 - Android Support Repository 47.0.0
 - Android Solver for ConstraintLayout 1.0.2
 - Android Solver for ConstraintLayout 1.0.1
-- Android SDK Platform-Tools 29.0.4
+- Android SDK Platform-Tools 29.0.5
 - Android SDK Platform 29
 - Android SDK Platform 28
 - Android SDK Platform 27
@@ -221,7 +224,7 @@ the
 - Android SDK Build-Tools 20.0.0
 - Android SDK Build-Tools 19.1.0
 - Android SDK Build-Tools 17.0.0
-- Android NDK 20.0.5594570
+- Android NDK 20.1.5948944
 - Android ConstraintLayout 1.0.2
 - Android ConstraintLayout 1.0.1
 - Az Module (1.0.0)
@@ -229,14 +232,14 @@ the
 - Az Module (2.3.2)
 - Az Module (2.6.0)
 - Cached container images
-  - node:10 (Digest: sha256:dabc15ad36a9e0a95862fbdf6ffdad439edc20aa27c7f10456644464e3fb5f08)
-  - node:10-alpine (Digest: sha256:b14a0f940b766176934efd14f5dc2f093f232e7292ab276b4aacf42606e2d3e1)
-  - node:12 (Digest: sha256:fc6c1371e3a0883f17e34492bcaffb4d8ad986ebb4a5eeafa8817bd425446566)
-  - node:12-alpine (Digest: sha256:e32343df0b80880915ca3570752cb41ac044253a5deec978f851b3834670fffa)
+  - node:10 (Digest: sha256:be69034700545030c110f67ae22e0584ddd59eeb2af81e4bd7f16f3ba5fa93a6)
+  - node:12 (Digest: sha256:88ee7d2a5e18d359b4b5750ecb50a9b238ab467397c306aeb9955f4f11be44ce)
+  - buildpack-deps:stretch (Digest: sha256:5b4b7ee0ae71108d352f8f484b3bc113780068dad21bef7458ac3dd5211cc044)
+  - debian:9 (Digest: sha256:99768ac883dc7d4f9c8f55dade9abb39afc1a3d737a8457dc5735ef868288cef)
+  - debian:8 (Digest: sha256:9eaf4a70aeddf435bebc619383f3e3a178b8ad8c1f3948319cdf74b65918d156)
+  - node:12-alpine (Digest: sha256:b556d8910b851c27c5c8922eeb55d94fe6dbaf878d24bf0c9a8c32ba21cd091a)
+  - node:10-alpine (Digest: sha256:da8161962573bd6ab16b54a9bfa81a263458e5199074d0678d0556376b22bd22)
   - alpine:3.10 (Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a)
-  - buildpack-deps:stretch (Digest: sha256:4c49708e49223a34ec243bc37e97896f767362bdc565fcabf21d7dd8f8511b43)
-  - debian:9 (Digest: sha256:67344662277c1b24385859a31f71610a2bdda0e2492835542555f33c95a47dee)
-  - debian:8 (Digest: sha256:e25703ee6ab5b2fac31510323d959cdae31eebdf48e88891c549e55b25ad7e94)
   - jekyll/builder:latest (Digest: sha256:875de39aa06300c749e26a79f39cdfa31404e4f2dbd2953cd4ebb0442bffda9e)
   - alpine:3.9 (Digest: sha256:7746df395af22f04212cd25a92c1d6dbc5a06a0ca9579a229ef43008d4d1302a)
   - alpine:3.7 (Digest: sha256:8421d9a84432575381bfabd248f1eb56f3aa21d9d7cd2511583c68c9b7511d10)
@@ -244,13 +247,11 @@ the
   - mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:e52e60b9f71183969830a3664279b5d8c799b4b0ec2c25a0686f7c02f6a9669a)
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
   - Python 2.7.16
-  - Python 3.4.10
   - Python 3.5.7
   - Python 3.6.9
   - Python 3.7.5
   - Python 3.8.0
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
-  - Ruby 2.3.7
   - Ruby 2.4.6
   - Ruby 2.5.5
   - Ruby 2.6.3
@@ -259,5 +260,5 @@ the
 - Python3 (Python 3.5.2)
 - pip3 (pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5))
 - PyPy2 ([PyPy 7.1.0 with GCC 6.2.0 20160901])
-- PyPy3 ([PyPy 7.0.0 with GCC 6.2.0 20160901])
+- PyPy3 ([PyPy 7.2.0 with GCC 6.2.0 20160901])
 - Boost C++ Libraries 1.69.0
