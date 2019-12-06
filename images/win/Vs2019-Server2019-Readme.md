@@ -1,6 +1,6 @@
 # Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** (v20191009.1) pool.
+The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** (v20191204.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.3<br/>
+_Version:_ 19.03.5<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,21 +25,20 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.3
-<br/>
+_Version:_ 6.2.3<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:e0f80fbc8bb2f39bd0eaba78b314444863ca3efec3f0e40a1b63aa501a36ef01)
-* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:c7219ea532e525bc34402027f7974a128746ebec79a31462bc8b59a9dfa6b3d8)
-* mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:404e0ee336a063619d1e93a2446061cf19cb3068bacb1775f5613e3b54e527e1)
-* mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:da46159cc4409ccdfe8e25d1e2b2e2705c31d956122d39ea89733b19d76340dd)
+* mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:29738c2954edb91b2302a3b7af4315e84cbdf6df0af9b530398f07dfc743b380)
+* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:a8ab48da8df4ba3e5ff2291a463e47a5bd1afa79ee1a5aa79014c337448e485b)
+* mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:e75260361cbd398788c195a159c2c56e3ef4ee011ecd9bd57bdac73ff1a43e33)
+* mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:643a236612096acfd1a9fdb59ae9669114d0909b2ce4382b8f3f67d26477e954)
 * microsoft/aspnetcore-build:1.0-2.0 (Digest: sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c)
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.3.3+29403.142<br/>
+_Version:_ VisualStudio/16.4.0+29519.181<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
@@ -71,12 +70,14 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.TestTools.CodedUITest
 * Microsoft.VisualStudio.Component.TestTools.WebLoadTest
 * Microsoft.VisualStudio.Component.UWP.VC.ARM64
+* Microsoft.VisualStudio.Component.VC.140
 * Microsoft.VisualStudio.Component.VC.ATL.ARM
 * Microsoft.VisualStudio.Component.VC.ATLMFC
 * Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre
 * Microsoft.VisualStudio.Component.VC.CLI.Support
 * Microsoft.VisualStudio.Component.VC.CMake.Project
 * Microsoft.VisualStudio.Component.VC.DiagnosticTools
+* Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset
 * Microsoft.VisualStudio.Component.VC.MFC.ARM
 * Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre
 * Microsoft.VisualStudio.Component.VC.MFC.ARM64
@@ -87,12 +88,14 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest
 * Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest
 * Microsoft.VisualStudio.Component.VC.v141
+* Microsoft.VisualStudio.Component.VC.v141.x86.x64
 * Microsoft.VisualStudio.Component.Windows10SDK.16299
 * Microsoft.VisualStudio.Component.Windows10SDK.17134
 * Microsoft.VisualStudio.Component.Windows10SDK.17763
 * Microsoft.VisualStudio.Component.Windows10SDK.18362
 * Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices
 * Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools
+* Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang
 * Microsoft.VisualStudio.ComponentGroup.Web.CloudTools
 * Microsoft.VisualStudio.Workload.Azure
 * Microsoft.VisualStudio.Workload.Data
@@ -129,8 +132,8 @@ _Version:_ 10.0.17763.0<br/>
 
 ## Azure Service Fabric
 
-_SDK Version:_ 3.3.617.9590<br/>
-_Runtime Version:_ 6.4.617.9590
+_SDK Version:_ 4.0.457.9590<br/>
+_Runtime Version:_ 7.0.457.9590
 
 ## WinAppDriver
 
@@ -302,8 +305,7 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
@@ -332,22 +334,22 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.74
+_Version:_ 2.0.77
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Azure DevOps Cli extension
 
-_Version:_ azure-devops                      0.13.0
+_Version:_ azure-devops                      0.16.0
 
 ## Python
 
-_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.4 (x64)<br/>_Version:_ 3.7.4 (x86)<br/><br/>
+_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.5 (x64)<br/>_Version:_ 3.7.5 (x86)<br/>_Version:_ 3.8.0 (x64)<br/>_Version:_ 3.8.0 (x86)<br/><br/>
 > Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
 
 ## PyPy
 
-_Version:_ 2.7.13 (x86)<br/>_Version:_ 3.5.3 (x86)<br/><br/>
+_Version:_ 2.7.13 (x86)<br/>_Version:_ 3.6.9 (x86)<br/><br/>
 > Note: These versions of PyPy are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
 
 ## Ruby
@@ -357,7 +359,7 @@ _Version:_ 2.4.6 (x64)<br/>_Version:_ 2.5.5 (x64)<br/>_Version:_ 2.6.3 (x64)<br/
 
 ## Python (64 bit)
 
-#### Python 3.7.4
+#### Python 3.7.5
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -367,13 +369,13 @@ _Location:_ C:/hostedtoolcache/windows/Python/2.7*/x64
 
 ## Git
 
-_Version:_ 2.23.0<br/>
+_Version:_ 2.24.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.8.0<br/>
+_Version:_ 2.9.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -405,20 +407,20 @@ _Environment:_
 
 ## Boost
 
-####
+#### 
 
-* PATH: contains the location of Boost version
+* PATH: contains the location of Boost version 
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
 
 ## PHP (x64)
 
-#### 7.3.10
+#### 7.4.0
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.10
-* PHPROOT: root directory of the PHP 7.3.10 installation
+* PATH: contains the location of php.exe version 7.4.0
+* PHPROOT: root directory of the PHP 7.4.0 installation
 
 ## Ruby (x64)
 
@@ -429,7 +431,7 @@ _Environment:_
 
 ## Rust (64-bit)
 
-#### 1.38.0
+#### 1.39.0
 _Location:_ C:\Rust\.cargo\bin
 _Environment:_
 * PATH: contains the location of rustc.exe
@@ -440,15 +442,19 @@ _Version:_ 1.8.17<br/>
 _Environment:_
 * PATH: contains location of svn.exe
 
+## sbt
+
+
+
 ## Google Chrome
 
 _version:_
-77.0.3865.90
+78.0.3904.97
 
 ## Mozilla Firefox
 
 _version:_
-69.0.1
+70.0.1
 
 ## Selenium Web Drivers
 
@@ -456,7 +462,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-77.0.3865.40
+78.0.3904.70
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -480,20 +486,19 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.16.3<br/>
+_Version:_ 12.13.1<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Bower 1.8.8<br/>
-* Yarn 1.19.1<br/>
+* Yarn 1.21.0<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.9.0<br/>
+_Version:_ 6.12.1<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -530,13 +535,13 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 5.6.2<br/>
+_Version:_ 6.0.1<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.15.4<br/>
+_Version:_ 3.16.0<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -552,16 +557,20 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 3.1.100 C:\Program Files\dotnet\sdk\3.1.100
+* 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
 * 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
 * 2.2.402 C:\Program Files\dotnet\sdk\2.2.402
 * 2.2.401 C:\Program Files\dotnet\sdk\2.2.401
 * 2.2.301 C:\Program Files\dotnet\sdk\2.2.301
 * 2.2.300 C:\Program Files\dotnet\sdk\2.2.300
+* 2.2.207 C:\Program Files\dotnet\sdk\2.2.207
 * 2.2.206 C:\Program Files\dotnet\sdk\2.2.206
 * 2.2.205 C:\Program Files\dotnet\sdk\2.2.205
 * 2.2.204 C:\Program Files\dotnet\sdk\2.2.204
 * 2.2.203 C:\Program Files\dotnet\sdk\2.2.203
 * 2.2.202 C:\Program Files\dotnet\sdk\2.2.202
+* 2.2.110 C:\Program Files\dotnet\sdk\2.2.110
 * 2.2.109 C:\Program Files\dotnet\sdk\2.2.109
 * 2.2.108 C:\Program Files\dotnet\sdk\2.2.108
 * 2.2.107 C:\Program Files\dotnet\sdk\2.2.107
@@ -576,11 +585,13 @@ _SDK:_
 * 2.1.801 C:\Program Files\dotnet\sdk\2.1.801
 * 2.1.701 C:\Program Files\dotnet\sdk\2.1.701
 * 2.1.700 C:\Program Files\dotnet\sdk\2.1.700
+* 2.1.607 C:\Program Files\dotnet\sdk\2.1.607
 * 2.1.606 C:\Program Files\dotnet\sdk\2.1.606
 * 2.1.605 C:\Program Files\dotnet\sdk\2.1.605
 * 2.1.604 C:\Program Files\dotnet\sdk\2.1.604
 * 2.1.603 C:\Program Files\dotnet\sdk\2.1.603
 * 2.1.602 C:\Program Files\dotnet\sdk\2.1.602
+* 2.1.510 C:\Program Files\dotnet\sdk\2.1.510
 * 2.1.509 C:\Program Files\dotnet\sdk\2.1.509
 * 2.1.508 C:\Program Files\dotnet\sdk\2.1.508
 * 2.1.507 C:\Program Files\dotnet\sdk\2.1.507
@@ -598,7 +609,10 @@ _SDK:_
 * 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
 
 _Runtime:_
+* 3.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.0
+* 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
 * 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
+* 2.2.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.8
 * 2.2.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.7
 * 2.2.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.6
 * 2.2.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.5
@@ -615,6 +629,7 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
+* 2.1.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.14
 * 2.1.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.13
 * 2.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.12
 * 2.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.11
@@ -636,7 +651,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.6.3<br/>
+_Version:_ Version 3.7.3<br/>
 
 ## Miniconda
 
@@ -646,7 +661,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.5.7.0<br/>
+_Version:_ 2.7.1.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -663,7 +678,7 @@ _Version:_ jq-1.6<br/>
 
 ## Inno Setup
 
-_Version:_ 6.0.2<br/>
+_Version:_ 6.0.3<br/>
 
 ## Perl
 
@@ -671,15 +686,15 @@ _Version:_ v5.26.2<br/>
 
 ## GitVersion
 
-_Version:_ 5.0.1.0<br/>
+_Version:_ 5.1.2.0<br/>
 
 ## OpenSSL
 
-_Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1c at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.1b at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
+_Version:_ 1.1.1d at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1d at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.1c at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.46.1<br/>
+_Version:_ 6.47.2<br/>
 
 ## Vcpkg
 
@@ -687,3 +702,15 @@ _Version:_ 2019.09.12-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
+
+## Kubectl
+
+_Version:_ Client Version: v1.16.2<br/>
+_Environment:_
+* PATH: contains location of kubectl.exe
+
+## Kind
+
+_Version:_ v0.5.1<br/>
+_Environment:_
+* PATH: contains location of kind.exe
