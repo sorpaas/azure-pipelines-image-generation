@@ -1,8 +1,8 @@
 # Hosted Ubuntu 1804 Image (Ubuntu 18.04.3 LTS)
-The following software is installed on machines in the Hosted Ubuntu 1804 (v20191202.1) pool
+The following software is installed on machines in the Hosted Ubuntu 1804 (v20191209.1) pool
 ***
 - 7-Zip 16.02
-- Ansible (ansible 2.9.1)
+- Ansible (ansible 2.9.2)
 - AzCopy (azcopy 7.3.0-netcore)
 - Azure CLI (azure-cli                         2.0.77)
 - Azure CLI (azure-devops                      0.16.0)
@@ -29,7 +29,7 @@ The following software is installed on machines in the Hosted Ubuntu 1804 (v2019
   - wget
   - zip
   - tzdata
-- AWS CLI (aws-cli/1.16.293 Python/2.7.15+ Linux/5.0.0-1025-azure botocore/1.13.29)
+- AWS CLI (aws-cli/1.16.299 Python/2.7.15+ Linux/5.0.0-1027-azure botocore/1.13.35)
 - build-essential
 - Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190309042703.125 (branches/release_60))
 - CMake (cmake version 3.12.4)
@@ -87,7 +87,7 @@ The following software is installed on machines in the Hosted Ubuntu 1804 (v2019
   - 2.1.301
   - 2.1.300
 - Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.5.6)
-- Firefox (Mozilla Firefox 70.0.1)
+- Firefox (Mozilla Firefox 71.0)
 - GNU C++ 7.4.0
 - Git (2.24.0)
 - Git Large File Storage (LFS) (2.9.1)
@@ -102,8 +102,8 @@ compiled using version 2.0.1.1 of the Cabal library )
 compiled using version 2.2.0.1 of the Cabal library )
 - Haskell Cabal (cabal-install version 2.4.1.0
 compiled using version 2.4.1.0 of the Cabal library )
-- Haskell Cabal (cabal-install version 3.0.0.0
-compiled using version 3.0.0.0 of the Cabal library )
+- Haskell Cabal (cabal-install version 3.0.1.0
+compiled using version 3.0.1.0 of the Cabal library )
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.0.2)
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.2.2)
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.4.4)
@@ -114,7 +114,7 @@ compiled using version 3.0.0.0 of the Cabal library )
 - GHC (The Glorious Glasgow Haskell Compilation System, version 8.8.1)
 - Haskell Stack (Version 2.1.3, Git revision 636e3a759d51127df2b62f90772def126cdf6d1f (7735 commits) x86_64 hpack-0.31.2)
 - Heroku (heroku/7.35.0 linux-x64 node-v12.13.0)
-- HHVM (HipHop VM 4.33.0 (rel))
+- HHVM (HipHop VM 4.34.0 (rel))
 - ImageMagick
 - Azul Zulu OpenJDK (7) (openjdk version "1.7.0_242")
 - Azul Zulu OpenJDK (8) (openjdk version "1.8.0_232")
@@ -124,7 +124,7 @@ compiled using version 3.0.0.0 of the Cabal library )
 - Gradle 6.0.1
 - Maven (Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T15:06:16Z))
 - Kind (v0.5.1)
-- kubectl (Client Version: v1.16.3)
+- kubectl (Client Version: v1.17.0)
 - helm (Client: v2.16.1+gbbdfe5e)
 - Leiningen (Leiningen 2.9.1 on Java 1.8.0_232 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.5.3))
@@ -139,7 +139,7 @@ compiled using version 3.0.0.0 of the Cabal library )
 Local version: Unknown)
 - n (6.1.3)
 - Parcel (1.12.4)
-- TypeScript (Version 3.7.2)
+- TypeScript (Version 3.7.3)
 - Webpack (4.41.2)
 - Webpack CLI (3.3.10)
 - Yarn (1.19.2)
@@ -148,7 +148,7 @@ Local version: Unknown)
 - PHP 7.2 (PHP 7.2.25-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:42:26) ( NTS ))
 - PHP 7.3 (PHP 7.3.12-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Nov 28 2019 07:37:16) ( NTS ))
 - Composer  (Composer version 1.9.1 2019-11-01 17:20:17)
-- PHPUnit (PHPUnit 7.5.17 by Sebastian Bergmann and contributors.)
+- PHPUnit (PHPUnit 7.5.18 by Sebastian Bergmann and contributors.)
 - Pollinate
 - Powershell (PowerShell 6.2.3)
 - rustup (1.20.2)
@@ -160,13 +160,13 @@ Local version: Unknown)
 - bindgen (execute
 the
 0.52.0)
-- cbindgen (0.10.0)
+- cbindgen (0.11.1)
 - sbt (1.3.4)
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.7 (r1800392))
-- Terraform (Terraform v0.12.16)
+- Terraform (Terraform v0.12.17)
 - Vcpkg 2019.09.12-unknownhash
-- Zeit Now CLI (16.6.0)
+- Zeit Now CLI (16.6.3)
 - Google Repository 58
 - Google Play services 49
 - Google APIs 24
