@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20191202.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20191209.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -64,6 +64,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 3.1.100 C:\Program Files\dotnet\sdk\3.1.100
 * 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
 * 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
 * 2.2.402 C:\Program Files\dotnet\sdk\2.2.402
@@ -115,6 +116,7 @@ _SDK:_
 * 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
 
 _Runtime:_
+* 3.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.0
 * 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
 * 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
 * 2.2.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.8
