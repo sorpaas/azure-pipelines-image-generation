@@ -32,3 +32,4 @@ npm install -g gulp-cli
 npm install -g parcel-bundler
 npm install -g --save-dev webpack webpack-cli
 npm install -g yarn
+npm install -g node-sass
