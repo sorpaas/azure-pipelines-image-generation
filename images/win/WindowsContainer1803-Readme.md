@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20191202.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200102.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -30,29 +30,29 @@ _Version:_ 6.2.3<br/>
 ## Docker images
 
 The following container images have been cached:
+* microsoft/windowsservercore:1803 (Digest: sha256:8e9f87fe608eefc47f91ed34720017db9076221a393fce0ce28a6793e34aa77d)
+* microsoft/nanoserver:1803 (Digest: sha256:b0042ab2f69516b2aa5afceadb77eba0d6365bc73b921330ee6735f5be2492a1)
 * microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:a55aebebbbc4a56f6342e8f5e6eabc0ef0112de3c1b0cdae93739f7f894b0f5d)
-* microsoft/windowsservercore:1803 (Digest: sha256:7f8669fc5f43382aef13ed258a9aae0cd45e5f7beb8d8a49d38d71159ede46d6)
 * mcr.microsoft.com/windows/servercore:1803 (Digest: <none>)
-* microsoft/nanoserver:1803 (Digest: sha256:8c62a9d8ce7dea14cc08d556e26fafa76a4870b2bcc709e03bac5111f51a9450)
 * mcr.microsoft.com/windows/nanoserver:1803 (Digest: <none>)
 * microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:8d5052ef39a8caa4bebf2d99059cfd693351898cf08bb381a909ba00ef3fbe3b)
 * microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 12.13.1<br/>
+_Version:_ 12.14.0<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Yarn 1.21.0<br/>
+* Yarn 1.21.1<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.12.1<br/>
+_Version:_ 6.13.4<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -64,6 +64,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 3.1.100 C:\Program Files\dotnet\sdk\3.1.100
 * 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
 * 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
 * 2.2.402 C:\Program Files\dotnet\sdk\2.2.402
@@ -115,6 +116,7 @@ _SDK:_
 * 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
 
 _Runtime:_
+* 3.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.0
 * 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
 * 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
 * 2.2.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.8
@@ -144,13 +146,13 @@ _Runtime:_
 
 ## Git
 
-_Version:_ 2.24.0<br/>
+_Version:_ 2.24.1<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.9.0<br/>
+_Version:_ 2.9.1<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
