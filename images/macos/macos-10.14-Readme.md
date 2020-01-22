@@ -48,7 +48,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Project Management
 - Apache Maven 3.6.3
-- Welcome to Gradle 6.1!  - New sample projects in Gradle's documentation For more details see https://docs.gradle.org/6.1/release-notes.html Gradle 6.1
+- Gradle 6.1
 
 ### Utilities
 - Curl 7.68.0
