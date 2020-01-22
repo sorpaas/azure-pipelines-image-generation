@@ -6,10 +6,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 :warning: Xcode 11.3.1 will be set as default in two weeks
 
-## Operating System
-
-- OS X 10.14.6 (18G2022) **Mojave**
-
 ## OS X info
 - System Version: macOS 10.14.6 (18G2022)
 - Kernel Version: Darwin 18.7.0
