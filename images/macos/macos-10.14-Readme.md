@@ -4,7 +4,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 #### Xcode 11.2.1 set by default
 
-:warning: Xcode 11.3.1 will be set as default in two weeks
+:warning: Xcode 11.3.1 will be set as default in the next week
 
 ## OS X info
 - System Version: macOS 10.14.6 (18G2022)
