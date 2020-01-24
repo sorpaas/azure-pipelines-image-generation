@@ -1,11 +1,12 @@
-## OS X info
-- System Version: macOS 10.13.6 (17G10021)
-- Kernel Version: Darwin 17.7.0
-- Boot Volume: Macintosh HD
-- Boot Mode: Normal
-- User Name: runner (runner)
-- Secure Virtual Memory: Enabled
-- System Integrity Protection: Enabled
+# Azure Pipelines hosted macOS image
+
+The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS High Sierra' pool).
+
+#### Xcode 10.1 set by default
+
+## Operating System
+
+- OS X 10.13.6 (17G10021) **High Sierra**
 
 ## Installed Software
 ### Language and Runtime
