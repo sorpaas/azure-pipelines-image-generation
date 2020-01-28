@@ -4,6 +4,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 #### Xcode 11.3.1 set by default
 
+## OS X info
+- System Version: macOS 10.14.6 (18G2022)
+- Kernel Version: Darwin 18.7.0
+- Boot Volume: Macintosh HD
+- Boot Mode: Normal
+- User Name: runner (runner)
+- Secure Virtual Memory: Enabled
+- System Integrity Protection: Enabled
+
 ## Installed Software
 ### Language and Runtime
 - Java 1.7: (Zulu 7.36.0.5-CA-macosx) (build 1.7.0_252-b10)
