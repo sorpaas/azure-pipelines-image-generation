@@ -4,6 +4,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 #### Xcode 11.3.1 set by default
 
+## Operating System
+- OS X 10.14.6 (18G3020) **Mojave**
+
 ## Installed Software
 ### Language and Runtime
 - Java 1.7: (Zulu 7.36.0.5-CA-macosx) (build 1.7.0_252-b10)
