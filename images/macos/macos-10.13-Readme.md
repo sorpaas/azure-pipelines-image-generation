@@ -6,7 +6,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Operating System
 
-- OS X 10.13.6 (17G10021) **High Sierra**
+- OS X 10.13.6 (17G11023) **High Sierra**
 
 ## Installed Software
 ### Language and Runtime
@@ -18,18 +18,18 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Node.js v6.17.0
 - NVM 0.33.11
 - NVM - Cached node versions: v6.17.1 v8.17.0 v10.18.1 v12.14.1 v13.7.0
-- PowerShell 6.2.3
+- PowerShell 6.2.4
 - Python 2.7.17
 - Python 3.7.6
 - Ruby 2.6.5p114
 - .NET SDK 1.0.1 1.0.4 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 1.1.10 1.1.11 1.1.12 1.1.13 2.0.0 2.0.3 2.1.2 2.1.4 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.13.6
+- Go 1.13.7
 
 ### Package Management
 - Bundler version 2.1.4
 - Carthage 0.34.0
 - CocoaPods 1.8.4
-- Homebrew 2.2.4
+- Homebrew 2.2.5
 - NPM 3.10.10
 - Yarn 1.21.1
 - NuGet 4.7.0.5148
@@ -40,7 +40,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Project Management
 - Apache Maven 3.6.3
-- Gradle 6.1
+- Gradle 6.1.1
 
 ### Utilities
 - Curl 7.68.0
@@ -54,14 +54,16 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - gpg (GnuPG) 2.2.19
 
 ### Tools
-- Fastlane 2.140.0
-- Cmake 3.16.2
+- Fastlane 2.141.0
+- Cmake 3.16.3
 - App Center CLI 1.2.2
 - Azure CLI 2.0.80
 
 ### Browsers
 - Google Chrome 79.0.3945.130 
 - ChromeDriver 79.0.3945.36
+- Microsoft Edge 79.0.309.71 
+- MSEdgeDriver 79.0.309.71
 
 ### Toolcache
 #### Ruby
@@ -158,7 +160,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Xcode
 | Version                       | Build                         | Path                          |
 | ----------------------------- | ----------------------------- | ----------------------------- |
-| 10.1                          | 10B61                         | /Applications/Xcode_10.1.app  |
+| 10.1 (default)                | 10B61                         | /Applications/Xcode_10.1.app  |
 | 10.0                          | 10A255                        | /Applications/Xcode_10.app    |
 | 9.4.1                         | 9F2000                        | /Applications/Xcode_9.4.1.app |
 | 9.4                           | 9F1027a                       | /Applications/Xcode_9.4.app   |
@@ -328,6 +330,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | build-tools-29.0.0                       | Android SDK Build-Tools, Revision 29.0.0 |
 | build-tools-29.0.1                       | Android SDK Build-Tools, Revision 29.0.1 |
 | build-tools-29.0.2                       | Android SDK Build-Tools, Revision 29.0.2 |
+| build-tools-29.0.3                       | Android SDK Build-Tools, Revision 29.0.3 |
 
 #### Android Utils
 | Package Name     | Version          |
@@ -352,5 +355,3 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | Google Play services                            | 49                                              |
 | Google Repository                               | 58                                              |
 | Intel x86 Emulator Accelerator (HAXM installer) | 7.5.1                                           |
-
-
