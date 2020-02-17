@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200210.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200216.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -19,7 +19,7 @@ _Environment:_
 
 ## Docker-compose
 
-_Version:_ 1.25.3<br/>
+_Version:_ 1.25.4<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
@@ -40,7 +40,7 @@ The following container images have been cached:
 
 ## Node.js
 
-_Version:_ 12.15.0<br/>
+_Version:_ 12.16.0<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
