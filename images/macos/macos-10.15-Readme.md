@@ -254,19 +254,3 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | Google Play services                            | 49                                              |
 | Google Repository                               | 58                                              |
 | Intel x86 Emulator Accelerator (HAXM installer) | 7.5.1                                           |
-
-## Disk info
-- Total size: 379.8 Gb
-- Free size: 213.79 Gb
-- Used size: 166.01 Gb
-
-## Precache packages
-| Package   | Count     | Size      |
-| --------- | --------- | --------- |
-| Nuget     | 763       | 7.47Gb    |
-| CocoaPods | 1525      | 13.13Gb   |
-| Carthage  | 124       | 4.05Gb    |
-| Gradle    | 2601      | 4.53Gb    |
-| Maven     | 120       | 0.11Gb    |
-| Npm       | 3695      | 1.1Gb     |
-| Yarn      | 1550      | 1.29Gb    |
