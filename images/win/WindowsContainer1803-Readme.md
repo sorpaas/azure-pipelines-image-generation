@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200219.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200216.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -30,8 +30,8 @@ _Version:_ 6.2.4<br/>
 ## Docker images
 
 The following container images have been cached:
-* microsoft/nanoserver:1803 (Digest: sha256:f10f91cc7f5624a1b2434c8a625a1d376a784a0bb941ecf06e6b745ec9f337d4)
-* microsoft/windowsservercore:1803 (Digest: sha256:3c409b7874dd466dee08e6abc6a68eb6a9586054739249cc4e460aa68140e121)
+* microsoft/windowsservercore:1803 (Digest: sha256:04efd04d1e4761810dd11a0047b3e5736ace7783a3b3f8147a8b8835bdd00207)
+* microsoft/nanoserver:1803 (Digest: sha256:0b4cfdfe41eba10094cf6c0645926bca8829fe37e820c3e7dbc682e2bda0e8a6)
 * microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:a55aebebbbc4a56f6342e8f5e6eabc0ef0112de3c1b0cdae93739f7f894b0f5d)
 * mcr.microsoft.com/windows/servercore:1803 (Digest: <none>)
 * mcr.microsoft.com/windows/nanoserver:1803 (Digest: <none>)
@@ -64,20 +64,16 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
-* 3.1.102 C:\Program Files\dotnet\sdk\3.1.102
 * 3.1.101 C:\Program Files\dotnet\sdk\3.1.101
 * 3.1.100 C:\Program Files\dotnet\sdk\3.1.100
-* 3.0.103 C:\Program Files\dotnet\sdk\3.0.103
 * 3.0.102 C:\Program Files\dotnet\sdk\3.0.102
 * 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
 * 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
-* 2.1.804 C:\Program Files\dotnet\sdk\2.1.804
 * 2.1.803 C:\Program Files\dotnet\sdk\2.1.803
 * 2.1.802 C:\Program Files\dotnet\sdk\2.1.802
 * 2.1.801 C:\Program Files\dotnet\sdk\2.1.801
 * 2.1.701 C:\Program Files\dotnet\sdk\2.1.701
 * 2.1.700 C:\Program Files\dotnet\sdk\2.1.700
-* 2.1.609 C:\Program Files\dotnet\sdk\2.1.609
 * 2.1.608 C:\Program Files\dotnet\sdk\2.1.608
 * 2.1.607 C:\Program Files\dotnet\sdk\2.1.607
 * 2.1.606 C:\Program Files\dotnet\sdk\2.1.606
@@ -85,7 +81,6 @@ _SDK:_
 * 2.1.604 C:\Program Files\dotnet\sdk\2.1.604
 * 2.1.603 C:\Program Files\dotnet\sdk\2.1.603
 * 2.1.602 C:\Program Files\dotnet\sdk\2.1.602
-* 2.1.512 C:\Program Files\dotnet\sdk\2.1.512
 * 2.1.511 C:\Program Files\dotnet\sdk\2.1.511
 * 2.1.510 C:\Program Files\dotnet\sdk\2.1.510
 * 2.1.509 C:\Program Files\dotnet\sdk\2.1.509
@@ -105,10 +100,8 @@ _SDK:_
 * 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
 
 _Runtime:_
-* 3.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.2
 * 3.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.1
 * 3.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.0
-* 3.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.3
 * 3.0.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.2
 * 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
 * 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
@@ -120,7 +113,6 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
-* 2.1.16 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.16
 * 2.1.15 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.15
 * 2.1.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.14
 * 2.1.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.13
