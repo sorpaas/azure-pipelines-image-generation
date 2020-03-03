@@ -1,11 +1,12 @@
-## OS X info
-- System Version: macOS 10.13.6 (17G11023)
-- Kernel Version: Darwin 17.7.0
-- Boot Volume: Macintosh HD
-- Boot Mode: Normal
-- User Name: runner (runner)
-- Secure Virtual Memory: Enabled
-- System Integrity Protection: Enabled
+# Azure Pipelines hosted macOS image
+
+The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS High Sierra' pool).
+
+#### Xcode 10.1 set by default
+
+## Operating System
+
+- OS X 10.13.6 (17G11023) **High Sierra**
 
 ## Installed Software
 ### Language and Runtime
@@ -362,20 +363,3 @@
 | Google Play services                            | 49      |
 | Google Repository                               | 58      |
 | Intel x86 Emulator Accelerator (HAXM installer) | 7.5.1   |
-
-## Disk info
-- Total size: 379.2 Gb
-- Free size: 157.84 Gb
-- Used size: 221.36 Gb
-
-## Precache packages
-| Package   | Count | Size   |
-| --------- | ----- | ------ |
-| Nuget     | 418   | 6.69Gb |
-| CocoaPods | 79    | 2.49Gb |
-| Carthage  | 137   | 4.11Gb |
-| Gradle    | 539   | 0.36Gb |
-| Maven     | 120   | 0.11Gb |
-| Npm       | 3862  | 1.16Gb |
-| Yarn      | 1558  | 1.29Gb |
-
