@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200224.0) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200303.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -132,13 +132,13 @@ _Runtime:_
 
 ## Git
 
-_Version:_ 2.25.0<br/>
+_Version:_ 2.25.1<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.9.2<br/>
+_Version:_ 2.10.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
