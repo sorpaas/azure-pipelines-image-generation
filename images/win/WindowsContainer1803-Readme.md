@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200301.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200303.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
