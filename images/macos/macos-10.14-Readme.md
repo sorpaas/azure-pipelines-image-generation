@@ -290,6 +290,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Android
 #### Android SDK Tools
+| Package Name                       | Description                        |
+| ---------------------------------- | ---------------------------------- |
+| tools                              | Android SDK Tools, Revision 26.1.1 |
 
 #### Android SDK Platform-Tools
 | Package Name   | Description                                 |
