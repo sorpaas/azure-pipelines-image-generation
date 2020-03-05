@@ -1,18 +1,28 @@
-# ![Azure Pipelines](/help/resources/DevOpsIconPipelines40.png "Azure Pipelines") Azure Pipelines VM images for Microsoft-hosted CI/CD
+# Former Repository for Azure Pipelines VM images for Microsoft-hosted CI/CD
 
-## Overview
+This repository has been replaced by [virtual-environments](https://github.com/actions/virtual-environments) repo. If you have an issue or request for an image, please create an issue in the [virtual-environments](https://github.com/actions/virtual-environments) repo.
 
-This repo contains scripts that generate the Windows Container virtual machine image used by [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/?nav=min) for [Microsoft-hosted CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=vsts&tabs=yaml).The images are generated using [Packer](https://www.packer.io/).
+## Rolling Brownouts for vs2015-win2012r2, macOS-10.13, win1803
 
-## Following image updates
-You can follow releases for the Windows Container virtual machine image [here](https://github.com/Microsoft/azure-pipelines-image-generation/releases). Consider enabling **Watch -> Releases only** at the top of the page.
+Starting March 9, 2020, there will be one hour blocks where builds and releases using vs2015-win2012r2, macOS-10.13, win1803 will fail. These images are being removed on March 23, 2020 and these brownout windows are meant to bring awareness to allow customers time to react before the images are completely removed. There will be up to three of these one hour brownout a day starting March 9th, 2020.
 
-## Issues and requests
-If you have an issue or request for an image, please create an issue in the [virtual-environments](https://github.com/actions/virtual-environments) repo.
+## Image removal on March 23, 2020
 
+On March 23, 2020 we are removing the following images:
+
+- Windows Server 2012R2 with Visual Studio 2015, a.k.a vs2015-win2012r2
+- macOS X High Sierra 10.13, a.k.a macOS-10.13
+- Windows Server Core 1803, a.k.a win1803
+
+Please see https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/ for more details and guidance on updating to newer images.
+
+## Following image updates for Windows Container until March 23rd, 2020
+You can follow releases for the Windows Container virtual machine image [here](https://github.com/Microsoft/azure-pipelines-image-generation/releases). 
 
 ## Contributing	
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a	
+Contribution requests will not be actively monitored. Please use [virtual-environments](https://github.com/actions/virtual-environments).
+
+Most contributions require you to agree to a	
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us	
 the rights to use your contribution. For details, visit https://cla.microsoft.com.	
 
