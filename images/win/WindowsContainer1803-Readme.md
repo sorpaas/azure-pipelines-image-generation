@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200303.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200308.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -25,7 +25,7 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.4<br/>
+_Version:_ 7.0.0<br/>
 
 ## Docker images
 
@@ -46,7 +46,7 @@ _Environment:_
 * PATH: contains location of node.exe<br/>
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Yarn 1.22.0<br/>
+* Yarn 1.22.1<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
@@ -67,10 +67,6 @@ _SDK:_
 * 3.1.102 C:\Program Files\dotnet\sdk\3.1.102
 * 3.1.101 C:\Program Files\dotnet\sdk\3.1.101
 * 3.1.100 C:\Program Files\dotnet\sdk\3.1.100
-* 3.0.103 C:\Program Files\dotnet\sdk\3.0.103
-* 3.0.102 C:\Program Files\dotnet\sdk\3.0.102
-* 3.0.101 C:\Program Files\dotnet\sdk\3.0.101
-* 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
 * 2.1.804 C:\Program Files\dotnet\sdk\2.1.804
 * 2.1.803 C:\Program Files\dotnet\sdk\2.1.803
 * 2.1.802 C:\Program Files\dotnet\sdk\2.1.802
@@ -108,10 +104,6 @@ _Runtime:_
 * 3.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.2
 * 3.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.1
 * 3.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.0
-* 3.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.3
-* 3.0.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.2
-* 3.0.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.1
-* 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
 * 2.1.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.9
 * 2.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8
 * 2.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.7
