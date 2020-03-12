@@ -7,22 +7,5 @@ assignees: ''
 
 ---
 
-<!--- PLEASE USE THIS REPO FOR REQUESTS RELATED TO THE WINDOWS CONTAINER IMAGE -->
-<!--- The other images have moved to https://github.com/actions/virtual-environments -->
-
-**Describe the bug**
-A clear and concise description of what the bug is, and why you consider it to be a bug.
-
-**Expected behavior**
-A description of what you expected to happen.
-
-**Actual behavior**
-A description with steps to reproduce the issue.
-
-1. Step 1
-2. Step 2
-
-**Image impacted**
-WINCON
-<!--- PLEASE USE THIS REPO FOR REQUESTS RELATED TO THE WINDOWS CONTAINER IMAGE -->
-<!--- The other images have moved to https://github.com/actions/virtual-environments -->
+This repository has been replaced by [virtual-environments](https://github.com/actions/virtual-environments) repository.
+If you have an issue or request for an image, please create an issue in the [virtual-environments](https://github.com/actions/virtual-environments) repository.
