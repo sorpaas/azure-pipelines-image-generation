@@ -1,24 +1,23 @@
 # Number of days of inactivity before an issue becomes stale
-daysUntilStale: 90
+daysUntilStale: 0
 
 # Number of days of inactivity before a stale issue is closed
-daysUntilClose: 7
+daysUntilClose: 1
 
 # Issues with these labels will never be considered stale
 exemptLabels:
   - status:In-progress
   - status:Approved
   - status:Help-wanted
-  
+
 # Label to use when marking an issue as stale
 staleLabel: stale
 
 # Comment to post when marking an issue as stale. Set to `false` to disable
 markComment: >
-  Thank you for your contributions. Because this issue has not had activity in the past 90 days,
-  we will be automatically closing this issue in 7 days. Often, we open issues for potential features
-  and gauge interest by likes and comments. Other times, issues become obsolete and are no longer applicable.
-  If you wish to keep this issue open, please respond before it is closed. We'll gladly take another look!
-  
+  This repository has been replaced by [virtual-environments](https://github.com/actions/virtual-environments) repository.
+  If you have an issue or request for an image, please create an issue in the [virtual-environments](https://github.com/actions/virtual-environments) repository.
+  This issue has been automatically marked as stale and will be closed.
+
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: false
