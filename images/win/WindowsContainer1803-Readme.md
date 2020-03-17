@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200308.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20200315.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -46,7 +46,7 @@ _Environment:_
 * PATH: contains location of node.exe<br/>
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Yarn 1.22.1<br/>
+* Yarn 1.22.4<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
