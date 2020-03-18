@@ -6,6 +6,8 @@ This repository has been replaced by [virtual-environments](https://github.com/a
 
 Starting March 9, 2020, there will be one hour blocks where builds and releases using vs2015-win2012r2, macOS-10.13, win1803 will fail. These images are being removed on March 23, 2020 and these brownout windows are meant to bring awareness to allow customers time to react before the images are completely removed. There will be up to three of these one hour brownout a day starting March 9th, 2020.
 
+Please see https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/ for more details and guidance on updating to newer images.  You can use the script located here to locate pipelines that need to be updated: https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages
+
 ## Image removal on March 23, 2020
 
 On March 23, 2020 we are removing the following images:
