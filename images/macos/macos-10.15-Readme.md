@@ -14,18 +14,18 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Java 11: Zulu11.37+17-CA (build 11.0.6+10-LTS)
 - Java 12: Zulu12.3+11-CA (build 12.0.2+3)
 - Java 13: Zulu13.29+9-CA (build 13.0.2+6-MTS)
-- Rust 1.41.1
+- Rust 1.42.0
 - Clang/LLVM 9.0.1
-- gcc-8 (Homebrew GCC 8.3.0_2) 8.3.0
-- gcc-9 (Homebrew GCC 9.2.0_3) 9.2.0
-- GNU Fortran (Homebrew GCC 8.3.0_2) 8.3.0
-- GNU Fortran (Homebrew GCC 9.2.0_3) 9.2.0
+- gcc-8 (Homebrew GCC 8.4.0) 8.4.0
+- gcc-9 (Homebrew GCC 9.3.0) 9.3.0
+- GNU Fortran (Homebrew GCC 8.4.0) 8.4.0
+- GNU Fortran (Homebrew GCC 9.3.0) 9.3.0
 - Node.js v12.16.1
 - NVM 0.33.11
-- NVM - Cached node versions: v6.17.1 v8.17.0 v10.19.0 v12.16.1 v13.10.1
+- NVM - Cached node versions: v6.17.1 v8.17.0 v10.19.0 v12.16.1 v13.11.0
 - PowerShell 7.0.0
 - Python 2.7.17
-- Python 3.7.6
+- Python 3.7.7
 - Ruby 2.6.5p114
 - .NET SDK 2.0.0 3.0.100 3.0.101 3.0.102 3.0.103 3.1.100 3.1.101
 - Go 1.14
@@ -37,14 +37,14 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Vcpkg 2020.02.04
 - Bundler version 2.1.4
 - Carthage 0.34.0
-- CocoaPods 1.9.0
-- Homebrew 2.2.9
+- CocoaPods 1.9.1
+- Homebrew 2.2.10
 - NPM 6.13.4
-- Yarn 1.22.1
+- Yarn 1.22.4
 - NuGet 5.4.0.6315
 - Pip 19.3.1 (python 2.7)
-- Pip 19.3.1 (python 3.7)
-- Miniconda 4.7.12
+- Pip 20.0.2 (python 3.7)
+- Miniconda 4.8.2
 - RubyGems 3.1.2
 
 ### Project Management
@@ -52,9 +52,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Gradle 6.2.2
 
 ### Utilities
-- Curl 7.69.0
-- Git: 2.25.0
+- Curl 7.69.1
+- Git: 2.25.1
 - Git LFS: 2.10.0
+- Hub CLI: 2.14.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.13.0
 - Packer 1.5.4
@@ -72,15 +73,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Tools
 - Fastlane 2.143.0
 - Cmake 3.16.5
-- App Center CLI 2.3.3
-- Azure CLI 2.1.0
+- App Center CLI 2.3.4
+- Azure CLI 2.2.0
 
 ### Browsers
 - Google Chrome 80.0.3987.132
 - ChromeDriver 80.0.3987.106
 - Microsoft Edge 80.0.361.66
 - MSEdgeDriver 80.0.361.66
-- Mozilla Firefox 73.0.1
+- Mozilla Firefox 74.0
 - geckodriver 0.26.0
 
 ### Toolcache
@@ -261,3 +262,19 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | Google Play services                            | 49      |
 | Google Repository                               | 58      |
 | Intel x86 Emulator Accelerator (HAXM installer) | 7.5.1   |
+
+## Disk info
+- Total size: 379.8 Gb
+- Free size: 210.72 Gb
+- Used size: 169.09 Gb
+
+## Precache packages
+| Package   | Count | Size    |
+| --------- | ----- | ------- |
+| Nuget     | 759   | 7.57Gb  |
+| CocoaPods | 1432  | 10.47Gb |
+| Carthage  | 134   | 3.8Gb   |
+| Gradle    | 2615  | 5.14Gb  |
+| Maven     | 120   | 0.11Gb  |
+| Npm       | 3621  | 1.08Gb  |
+| Yarn      | 1559  | 1.29Gb  |
