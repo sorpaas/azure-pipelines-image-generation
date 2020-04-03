@@ -126,7 +126,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - 4.8.1
 
 #### Xamarin.iOS
-- 13.14.1.39
+- 13.10.0.21
 - 13.8.3.0
 - 13.6.0.12
 - 13.4.0.2
@@ -148,8 +148,8 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - 10.6.0.10
 
 #### Xamarin.Mac
-- 6.14.1.39
 - 6.10.0.21
+- 6.8.3.0
 - 6.6.0.12
 - 6.4.0.2
 - 6.2.0.47
@@ -169,9 +169,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - 3.0.0.398
 
 #### Xamarin.Android
-- 10.2.0
 - 10.1.3
 - 10.0.6
+- 9.4.1
 - 9.3.0
 - 9.2.3
 - 9.1.8
