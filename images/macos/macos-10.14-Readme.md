@@ -5,7 +5,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 #### Xcode 11.3.1 set by default
 
 ## Operating System
-- [macOS 10.14.6 (18G4032) **Mojave**
+- macOS 10.14.6 (18G4032) **Mojave**
 
 # Installed Software
 ## Language and Runtime
@@ -86,9 +86,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ## Browsers
 - Safari 13.1 (14609.1.20.111.8)
 - SafariDriver 13.1 (14609.1.20.111.8)
-- Google Chrome 81.0.4044.113 
+- Google Chrome 81.0.4044.113
 - ChromeDriver 81.0.4044.69
-- Microsoft Edge 81.0.416.53 
+- Microsoft Edge 81.0.416.53
 - MSEdgeDriver 81.0.416.58
 - Mozilla Firefox 75.0
 - geckodriver 0.26.0
