@@ -13,6 +13,12 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - System Integrity Protection: Enabled
 - Image Version: 20200425.1
 
+# OS X info
+- System Version: macOS 10.14.6 (18G4032)
+- Kernel Version: Darwin 18.7.0
+- System Integrity Protection: Enabled
+- Image Version: 20200430.1
+
 # Installed Software
 ## Language and Runtime
 - Java 1.7: (Zulu 7.38.0.11-CA-macosx) (build 1.7.0_262-b10)
@@ -29,7 +35,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - GNU Fortran (Homebrew GCC 9.3.0_1) 9.3.0
 - Node.js v6.17.0
 - NVM 0.33.11
-- NVM - Cached node versions: v6.17.1 v8.17.0 v10.20.1 v12.16.2 v13.13.0
+- NVM - Cached node versions: v6.17.1 v8.17.0 v10.20.1 v12.16.3 v13.14.0
 - PowerShell 7.0.0
 - Python 2.7.17
 - Python 3.7.7
@@ -44,7 +50,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Bundler version 2.1.4
 - Carthage 0.34.0
 - CocoaPods 1.9.1
-- Homebrew 2.2.13
+- Homebrew 2.2.14
 - NPM 3.10.10
 - Yarn 1.22.4
 - NuGet 4.7.0.5148
@@ -58,7 +64,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Gradle 6.3
 
 ## Utilities
-- Curl 7.69.1
+- Curl 7.70.0
 - Git: 2.26.2
 - Git LFS: 2.10.0
 - Hub CLI: 2.14.2
@@ -72,7 +78,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - psql (PostgreSQL) 12.2
 - PostgreSQL 12.2
 - aria2 1.35.0
-- azcopy 10.4.1
+- azcopy 
 - zstd 1.4.4
 - bazel 3.1.0
 - bazelisk v1.4.0
@@ -82,20 +88,20 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Tools
 - Fastlane 2.146.1
-- Cmake 3.17.1
+- Cmake 3.17.2
 - App Center CLI 1.2.2
-- Azure CLI 2.4.0
-- AWS CLI 2.0.9
-- AWS SAM CLI 0.47.0
+- Azure CLI 2.5.1
+- AWS CLI 2.0.10
+- AWS SAM CLI 0.48.0
 - Aliyun CLI 3.0.39
 
 ## Browsers
 - Safari 13.1 (14609.1.20.111.8)
 - SafariDriver 13.1 (14609.1.20.111.8)
-- Google Chrome 81.0.4044.122 
+- Google Chrome 81.0.4044.129 
 - ChromeDriver 81.0.4044.69
-- Microsoft Edge 81.0.416.64 
-- MSEdgeDriver 81.0.416.64
+- Microsoft Edge 81.0.416.68 
+- MSEdgeDriver 81.0.416.68
 - Mozilla Firefox 75.0
 - geckodriver 0.26.0
 
@@ -107,10 +113,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - 2.7.1
 
 ### Python
-- 2.7.17
+- 2.7.18
 - 3.5.9
 - 3.6.10
-- 3.7.6
+- 3.7.7
 - 3.8.2
 
 ### PyPy
