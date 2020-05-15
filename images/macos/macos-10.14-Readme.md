@@ -4,12 +4,6 @@
 - System Version: macOS 10.14.6 (18G4032)
 - Kernel Version: Darwin 18.7.0
 - System Integrity Protection: Enabled
-- Image Version: 20200430.1
-
-# macOS info
-- System Version: macOS 10.14.6 (18G4032)
-- Kernel Version: Darwin 18.7.0
-- System Integrity Protection: Enabled
 - Image Version: 20200510.1
 
 ## Installed Software
@@ -91,9 +85,9 @@
 ### Browsers
 - Safari 13.1 (14609.1.20.111.8)
 - SafariDriver 13.1 (14609.1.20.111.8)
-- Google Chrome 81.0.4044.138 
+- Google Chrome 81.0.4044.138
 - ChromeDriver 81.0.4044.138
-- Microsoft Edge 81.0.416.72 
+- Microsoft Edge 81.0.416.72
 - MSEdgeDriver 81.0.416.72
 - Mozilla Firefox 76.0.1
 - geckodriver 0.26.0
