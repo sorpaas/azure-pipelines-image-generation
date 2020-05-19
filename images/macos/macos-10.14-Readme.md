@@ -4,7 +4,7 @@
 - System Version: macOS 10.14.6 (18G4032)
 - Kernel Version: Darwin 18.7.0
 - System Integrity Protection: Enabled
-- Image Version: 20200510.1
+- Image Version: 20200514.2
 
 ## Installed Software
 ### Language and Runtime
@@ -29,7 +29,7 @@
 - Ruby 2.6.6p146
 - .NET SDK 1.0.1 1.0.4 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 1.1.10 1.1.11 1.1.12 1.1.13 2.0.0 2.0.3 2.1.2 2.1.4 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
 - Go 1.14.2
-- PHP 7.4.5
+- PHP 7.4.6
 - julia 1.4.1
 
 ### Package Management
@@ -37,7 +37,7 @@
 - Bundler version 2.1.4
 - Carthage 0.34.0
 - CocoaPods 1.9.1
-- Homebrew 2.2.15
+- Homebrew 2.2.16
 - NPM 3.10.10
 - Yarn 1.22.4
 - NuGet 4.7.0.5148
@@ -54,6 +54,7 @@
 - Curl 7.70.0
 - Git: 2.26.2
 - Git LFS: 2.11.0
+- GitHub CLI: 0.8.0
 - Hub CLI: 2.14.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.13.0
@@ -71,23 +72,25 @@
 - bazelisk v1.4.0
 - helm v3.2.1+gfe51cd1
 - virtualbox 6.1.6r137129
+- mongo v4.2.6
+- mongod v4.2.6
 - Vagrant 2.2.9
 
 ### Tools
-- Fastlane 2.146.1
+- Fastlane 2.148.0
 - Cmake 3.17.2
 - App Center CLI 1.2.2
 - Azure CLI 2.5.1
 - AWS CLI 2.0.10
-- AWS SAM CLI 0.48.0
+- AWS SAM CLI 0.49.0
 - Aliyun CLI 3.0.42
 
 ### Browsers
 - Safari 13.1 (14609.1.20.111.8)
 - SafariDriver 13.1 (14609.1.20.111.8)
-- Google Chrome 81.0.4044.138
+- Google Chrome 81.0.4044.138 
 - ChromeDriver 81.0.4044.138
-- Microsoft Edge 81.0.416.72
+- Microsoft Edge 81.0.416.72 
 - MSEdgeDriver 81.0.416.72
 - Mozilla Firefox 76.0.1
 - geckodriver 0.26.0
@@ -104,7 +107,7 @@
 - 3.5.9
 - 3.6.10
 - 3.7.7
-- 3.8.2
+- 3.8.3
 
 #### PyPy
 - 2.7.17
@@ -384,7 +387,7 @@
 | Package Name     | Version     |
 | ---------------- | ----------- |
 | cmake            | 3.6.4111459 |
-| Android Emulator | 30.0.5      |
+| Android Emulator | 30.0.12     |
 
 #### Android Google APIs
 | Package Name                | Description             |
